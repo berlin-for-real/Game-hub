@@ -21,8 +21,8 @@ const useGames = (gameQuery: GameQuery) =>
     "/games",
     {
       params: {
-        genre: gameQuery.genre?.id,
-        platform: gameQuery.platform?.id,
+        genres: gameQuery.genre?.id,
+        platforms: gameQuery.platform?.id,
         ordering: gameQuery.sortOrder,
         search: gameQuery.searchText
       },
